@@ -182,7 +182,7 @@ function keyTyped() { //key functions to increase and decrease threshold
     target = [];
     mandalaLayer.clear();
     threshold = 25;// resets threshold level back to default
-    StrokeW = 3;
+    strokeW = 3;
  
   }
 }
