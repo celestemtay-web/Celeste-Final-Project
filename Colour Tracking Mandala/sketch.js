@@ -1,4 +1,6 @@
-////Celeste Final Project: Colour Tracking and Mandala Drawing
+//Celeste Final Project: Colour Tracking and Mandala Drawing
+//This program uses webcam color tracking to allow users to draw kaleidoscopic mandala patterns by waving colored objects. 
+// Thresholds and stroke weights are adjustable, multiple colors can be tracked at once 
 
 
 let symmetry = 6; // creating 6 mandala slices
@@ -21,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);//changes screen to black each frame
+  background(255);//changes screen to white each frame
   image(video, 0, 0); // Uses webcam video as background
 
 // Draw UI panel background
@@ -146,7 +148,7 @@ function draw() {
     textStyle(BOLD);
     text("Threshold = " + threshold, 815, 40); // text to show current threshold value
     text("Click video to track a colour", 815, 60);
-    text("Wave coloured object to draw", 815, 80);
+    text("Wave coloured object to draw mandala", 815, 80);
   
     text("Press R to reset drawing", 815, 120); 
     text("Press I to increase threshold value", 815, 140);
